@@ -25,12 +25,29 @@ const CountryInfo = ({ data }) => {
 }
 */
 class CountryInfo extends React.Component {
+    constructor(data) {
+        super(data);
+      }
+
   render() {
     return (
       <div>
-        <h1>{this.props.data.name.common}</h1>
+        <h1>{this.data.name.common}</h1>
       </div>
     );
   }
 }
+/*
+function ExampleApp(data) {
+    
+    return (
+      <div>
+        <h2>CountryInfo</h2>
+        <CountryInfo data={data} />
+      </div>
+    );
+  }
+  export default ExampleApp;
+
+*/
 export default CountryInfo;

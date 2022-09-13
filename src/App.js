@@ -7,7 +7,7 @@ import CountryInfo from './components/CountryInfo.js';
 
 function App() {
   console.log(countries)
-  console.log(CountryInfo(countries[3]))
+  //console.log(CountryInfo(countries[3]))
   return (
     <div>
       <h1>COCK-A-DOODlE-DOO</h1>
