@@ -48,7 +48,7 @@ const CountryInfo = ({ data }) => {
       <p>Capital: {data.capital}</p>
       <p>Population: {data.population}</p>
       <p>Area: {data.area} km<sup>2</sup></p>
-      <img src={data.flag} alt={"Flag of {this.data.name.common}"} />
+      <img src={data.flag} alt={"Flag of " + data.name.common} />
     </div>
   );
 };
