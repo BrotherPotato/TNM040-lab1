@@ -17,4 +17,4 @@ const CountryInfo = ({ country }) => {
     </div>
   );
 }
-//export default ExampleApp;
+export default CountryInfo;
