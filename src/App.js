@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import countries from 'world-countries'
 
 function App() {
+  console.log(countries)
   return (
     <div className="App">
       <header className="App-header">
