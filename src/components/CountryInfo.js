@@ -41,13 +41,17 @@ class CountryInfo extends React.Component {
 }
 */
 
-const CountryInfo = ({ data }) => { 
-    return (
-        <div>
-            <h1>{data.name.common}</h1>
-        </div>
-    );
-  };
+const CountryInfo = ({ data }) => {
+  return (
+    <div>
+      <h2 className="country_name">{data.name.common}</h2>
+      <p>Capital: {data.capital}</p>
+      <p>Population: {data.population}</p>
+      <p>Area: {data.area} km<sup>2</sup></p>
+      <img src={data.flag} alt={"Flag of {this.data.name.common}"} />
+    </div>
+  );
+};
 /*
 function ExampleApp(data) {
     
