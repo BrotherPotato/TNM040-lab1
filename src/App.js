@@ -11,11 +11,14 @@ function App() {
   return (
     <div>
       <h1>COCK-A-DOODlE-DOO</h1>
-      <p><CountryInfo data={countries[0]}/></p>
+      
+      {countries.map(c => (
+        <CountryInfo data={c}/>
+      ))}
     </div>
   );
 }
 
-
+//<CountryInfo data={countries[c]}/>
 
 export default App;

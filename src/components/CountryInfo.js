@@ -30,9 +30,10 @@ class CountryInfo extends React.Component {
       }
 
   render() {
+    
     return (
       <div>
-        <h1>{this.data.name.common}</h1>
+        <p>{this.data.name.common}</p>
       </div>
     );
   }
