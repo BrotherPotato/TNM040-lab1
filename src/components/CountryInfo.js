@@ -1,7 +1,7 @@
 import React from "react";
-
-
-const CountryInfo = ({ country }) => {
+import countries from 'world-countries'
+/*
+const CountryInfo = ({ data }) => {
   return (
 
     /*<div>
@@ -15,12 +15,22 @@ const CountryInfo = ({ country }) => {
         ))}
       </ul>
       <img src={country.flags.png} alt="flag" width="200px" />
-    </div>*/
+    </div>
 
     <div>
-        <h1>{country.name.common}</h1>
+        <h1>{data.name.common}</h1>
 
     </div>
   );
+}
+*/
+class CountryInfo extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>{this.props.data.name.common}</h1>
+      </div>
+    );
+  }
 }
 export default CountryInfo;
