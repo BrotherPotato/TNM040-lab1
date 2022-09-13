@@ -24,6 +24,7 @@ const CountryInfo = ({ data }) => {
   );
 }
 */
+/*
 class CountryInfo extends React.Component {
     constructor(data) {
         super(data);
@@ -38,6 +39,15 @@ class CountryInfo extends React.Component {
     );
   }
 }
+*/
+
+const CountryInfo = ({ data }) => { 
+    return (
+        <div>
+            <h1>{data.name.common}</h1>
+        </div>
+    );
+  };
 /*
 function ExampleApp(data) {
     
