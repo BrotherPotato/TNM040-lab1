@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.country_name {
+  font-size: 20px;
+  font-weight: bold;
+}
