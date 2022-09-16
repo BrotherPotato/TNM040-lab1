@@ -46,7 +46,7 @@ const CountryInfo = ({ data }) => {
     <div>
       <h2 className="country_name">{data.name.common}</h2>
       <p>Capital: {data.capital}</p>
-      <p>Population: {data.population}</p>
+      {/*<p>Population: {data.population}</p>*/}
       <p>Area: {data.area} km<sup>2</sup></p>
       <img src={data.flag} alt={"Flag of " + data.name.common} />
     </div>
