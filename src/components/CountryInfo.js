@@ -41,14 +41,24 @@ class CountryInfo extends React.Component {
 }
 */
 
-const CountryInfo = ({ data }) => {
+const CountryInfo = ({ data , details}) => {
   return (
-    <div>
-      <h2 className="country_name">{data.name.common}</h2>
-      <p>Capital: {data.capital}</p>
-      {/*<p>Population: {data.population}</p>*/}
-      <p>Area: {data.area} km<sup>2</sup></p>
-      <img src={data.flag} alt={"Flag of " + data.name.common} />
+    <div className="country_box">
+      <div className="top">
+        <p className="country_name">{data.name.common}</p>
+        <p className="area">
+            {(data.area / Math.pow(10, 6)).toFixed(1)} million km<sup>2</sup>
+        </p>
+      </div>
+      <div className="bottom">
+        <p className="capital">Capital: {data.capital}</p>
+        <p className="capital">Region: {data.subregion}</p>
+        
+      </div>
+      <div className="bar">
+        <div className="bar_inner" style={{width: (data.area / 17098242 * 100) + "%"}}></div>
+      </div>
+      
     </div>
   );
 };

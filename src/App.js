@@ -5,13 +5,20 @@ import countries from 'world-countries'
 import CountryInfo from './components/CountryInfo.js';
 //import CountryInfo from './CountryInfo'
 
-const n = 15;
+const n = 5;
+const m = 15;
 
 function App() {
   console.log(countries)
   //console.log(CountryInfo(countries[3]))
   //countries.sort((a, b) => (a.population > b.population) ? 1 : -1);
-  var countries_sorted = countries.sort((a, b) => (b.area > a.area));
+  countries.sort((a, b) => {
+    return b.area - a.area;
+  });
+
+  countries.filter((a) => {
+    return a.name.common != "Antarctica";
+  });
   //countries.reverse();
   /*
   if(c < n) {
@@ -28,9 +35,24 @@ function App() {
       <h1>COCK-A-DOODlE-DOO</h1>
       <h2>Part 1</h2>
       <CountryInfo data={countries[0]}/>
+
       <h2>Part 2</h2>
-      {countries_sorted.slice(0, n).map((c) => (
+      {/*{countries.slice(0, n).map((c) => (
         <CountryInfo data={c}/>
+      ))} */}
+      
+      {countries.filter(country => { 
+        return country.capital != "";
+        //return country.name.common != "Antarctica";
+      }).slice(0, n).map((c) => (
+        <CountryInfo data={c} details={true} key={c.ccn3}/>
+      ))}
+
+      {countries.filter(country => { 
+        return country.capital != "";
+        //return country.name.common != "Antarctica";
+      }).slice(n, m).map((c) => (
+        <CountryInfo data={c} details={false} key={c.ccn3}/>
       ))}
 
       {/*{countries.map(c => {
