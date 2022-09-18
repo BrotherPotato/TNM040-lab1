@@ -40,20 +40,29 @@ function App() {
       {/*{countries.slice(0, n).map((c) => (
         <CountryInfo data={c}/>
       ))} */}
-      
-      {countries.filter(country => { 
-        return country.capital != "";
-        //return country.name.common != "Antarctica";
-      }).slice(0, n).map((c) => (
-        <CountryInfo data={c} details={true} key={c.ccn3}/>
-      ))}
+      <div className='part2Div'>
+        <div className='col1'>
+          {countries.filter(country => { 
+            return country.capital != "";
+            //return country.name.common != "Antarctica";
+          }).slice(0, n).map((c) => (
+            <CountryInfo data={c} details={true} key={c.ccn3}/>
+          ))}
 
-      {countries.filter(country => { 
-        return country.capital != "";
-        //return country.name.common != "Antarctica";
-      }).slice(n, m).map((c) => (
-        <CountryInfo data={c} details={false} key={c.ccn3}/>
-      ))}
+        </div>
+      
+        <div className='col2'>
+          {countries.filter(country => { 
+            return country.capital != "";
+            //return country.name.common != "Antarctica";
+          }).slice(n, m).map((c) => (
+            <CountryInfo data={c} details={false} key={c.ccn3}/>
+          ))}
+        </div>
+      
+
+      </div>
+      
 
       {/*{countries.map(c => {
         if(c < n) {
