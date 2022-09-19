@@ -1,6 +1,4 @@
 import React from "react";
-import countries from 'world-countries'
-
 
 const CountryInfo = ({ data , details}) => {
   return (
@@ -22,7 +20,6 @@ const CountryInfo = ({ data , details}) => {
           <div className="bar_inner" style={{width: (data.area / 17098242 * 100) + "%"}}></div>
         </div>
       </div>
-    
   );
 };
 

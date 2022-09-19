@@ -1,9 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import countries from 'world-countries'
-//import './components/CountryInfo.js';
 import CountryInfo from './components/CountryInfo.js';
-//import CountryInfo from './CountryInfo'
 
 const n = 5;
 const m = 15;
@@ -21,14 +18,12 @@ function App() {
  
   return (
     <div>
-      <h1>COCK-A-DOODlE-DOO</h1>
+      <h1>Lab-1-A-DOODLE-DOO</h1>
       <h2>Part 1</h2>
       <CountryInfo data={countries[0]}/>
 
       <h2>Part 2</h2>
-      {/*{countries.slice(0, n).map((c) => (
-        <CountryInfo data={c}/>
-      ))} */}
+
       <div className='part2Div'>
         <div className='col1'>
           {countries.filter(country => { 
@@ -48,24 +43,10 @@ function App() {
             <CountryInfo data={c} details={false} key={c.ccn3}/>
           ))}
         </div>
-      
-
       </div>
-      
-
-      {/*{countries.map(c => {
-        if(c < n) {
-          <CountryInfo data={c}/>
-        }
-        
-      })}*/}
-      
-
     </div>
   );
   
 }
-
-//<CountryInfo data={countries[c]}/>
 
 export default App;
