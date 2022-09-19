@@ -6,7 +6,7 @@ const n = 5;
 const m = 15;
 
 function App() {
-  console.log(countries)
+  console.log(countries);
 
   countries.sort((a, b) => {
     return b.area - a.area;
