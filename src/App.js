@@ -8,7 +8,7 @@ const m = 15;
 function App() {
   console.log(countries)
 
-  countries = countries.sort((a, b) => {
+  countries.sort((a, b) => {
     return b.area - a.area;
   });
 
@@ -27,19 +27,18 @@ function App() {
       <div className='part2Div'>
         <div className='col1'>
           {countries.slice(0, n).map((c) => (
-            <CountryInfo data={c} details={true} key={c.ccn3}/>
+            <CountryInfo data={c} details={true} large_area={countries[0].area} key={c.ccn3}/>
           ))}
         </div>
       
         <div className='col2'>
           {countries.slice(n, m).map((c) => (
-            <CountryInfo data={c} details={false} key={c.ccn3}/>
+            <CountryInfo data={c} details={false} large_area={countries[0].area} key={c.ccn3}/>
           ))}
         </div>
       </div>
     </div>
   );
-  
 }
 
 export default App;

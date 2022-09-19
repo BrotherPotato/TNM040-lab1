@@ -17,21 +17,21 @@
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .bottom{
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .country_box{
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  padding: 20px;
+  padding: 5px;
   margin: 5px;
   width: 95%;
 }

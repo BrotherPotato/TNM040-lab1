@@ -1,6 +1,6 @@
 import React from "react";
 
-const CountryInfo = ({ data , details}) => {
+const CountryInfo = ({ data , details, large_area}) => {
   return (
       <div className="country_box">
         <div className="top">
@@ -17,7 +17,7 @@ const CountryInfo = ({ data , details}) => {
         )}
         
         <div className="bar">
-          <div className="bar_inner" style={{width: (data.area / 17098242 * 100) + "%"}}></div>
+          <div className="bar_inner" style={{width: (data.area / large_area * 100) + "%"}}></div>
         </div>
       </div>
   );
