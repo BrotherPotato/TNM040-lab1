@@ -10,8 +10,7 @@ const m = 15;
 
 function App() {
   console.log(countries)
-  //console.log(CountryInfo(countries[3]))
-  //countries.sort((a, b) => (a.population > b.population) ? 1 : -1);
+
   countries.sort((a, b) => {
     return b.area - a.area;
   });
@@ -19,16 +18,6 @@ function App() {
   countries.filter((a) => {
     return a.name.common != "Antarctica";
   });
-  //countries.reverse();
-  /*
-  if(c < n) {
-    return (
-      <div>
-        <CountryInfo data={c}/>
-      </div>
-    );
-  }
-  */
  
   return (
     <div>

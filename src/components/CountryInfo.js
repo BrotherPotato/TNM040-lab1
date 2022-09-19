@@ -2,7 +2,7 @@ import React from "react";
 import countries from 'world-countries'
 
 
-const CountryInfo = ({ data , details, col}) => {
+const CountryInfo = ({ data , details}) => {
   return (
       <div className="country_box">
         <div className="top">
